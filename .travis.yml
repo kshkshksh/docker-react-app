@@ -9,5 +9,4 @@ before_install: -echo "start creating an image with dockerfile0"
 
 script: -docker run -e CI=true ksh931101/docker-react-app npm run test -- --coverage
 
-after_success:
-  -echo "Test success"
+after_success: -echo "Test success"
